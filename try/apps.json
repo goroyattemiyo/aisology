@@ -1,15 +1,181 @@
 [
-  {"id":"1","name":"ミプリンの冒険","desc":"Browser Action RPG + Roguelite","url":"https://goroyattemiyo.github.io/mipurin-adventure/","tags":["Game","RPG"],"art":""},
-  {"id":"2","name":"AA Copy Tool","desc":"ASCII art search, stock, and copy tool with PWA + Chrome Extension","url":"https://goroyattemiyo.github.io/aa-copy-tool/","tags":["Tool","PWA"],"art":""},
-  {"id":"3","name":"Launch Lab","desc":"数秒で心をつかむオープニング系コミュニティ","url":"https://goroyattemiyo.github.io/launch-lab/","tags":["Community"],"art":""},
-  {"id":"4","name":"Genspark Token Monitor","desc":"Gensparkのトークン使用量モニター","url":"https://goroyattemiyo.github.io/genspark-token-monitor/","tags":["Tool","AI"],"art":""},
-  {"id":"5","name":"Retro Games","desc":"レトロゲームを並べるよ","url":"https://goroyattemiyo.github.io/retro-games/","tags":["Game"],"art":""},
-  {"id":"6","name":"Threads Note Autopilot","desc":"Threads自動投稿 note連携システム","url":"https://goroyattemiyo.github.io/threads-note-autopilot/","tags":["Tool","Automation"],"art":""},
-  {"id":"7","name":"Screenshot Sorter","desc":"スクショ撮影直後に自動フォルダ振り分け","url":"https://goroyattemiyo.github.io/screenshot-sorter/","tags":["Tool","Mobile"],"art":""},
-  {"id":"8","name":"Background Removal","desc":"背景除去＆分割 LINEスタンプ用画像へ","url":"https://goroyattemiyo.github.io/Background-removal-splitting/","tags":["Tool","Image"],"art":""},
-  {"id":"9","name":"Insight Master","desc":"インサイトマスター","url":"https://goroyattemiyo.github.io/insight-master/","tags":["Tool","AI"],"art":""},
-  {"id":"10","name":"Postcraft","desc":"Synapse LP Generator","url":"https://goroyattemiyo.github.io/postcraft/","tags":["Tool","AI"],"art":""},
-  {"id":"11","name":"かつらファイト","desc":"かつらファイトｗ","url":"https://goroyattemiyo.github.io/katsura_fight/","tags":["Game"],"art":""},
-  {"id":"12","name":"Synapse","desc":"Multi-AI Agent Collaborative Development System","url":"https://goroyattemiyo.github.io/Synapse/","tags":["AI","Dev"],"art":""},
-  {"id":"13","name":"StemScore","desc":"MP3→6-part MIDI/Score AI-powered変換","url":"https://goroyattemiyo.github.io/stemscore/","tags":["Tool","Music","AI"],"art":""}
+  {
+    "id": "draft-bridge",
+    "name": "Bridge",
+    "desc": "ChatGPTからローカルPCのCodex CLIへ開発タスクを渡し、安全な検証と人の承認を経てGitHub反映まで支援する開発用Bridge",
+    "url": "assets/01_bridge_concept.png",
+    "tags": [
+      "AI",
+      "Dev",
+      "開発中",
+      "紹介"
+    ],
+    "art": "assets/01_bridge_concept.png"
+  },
+  {
+    "id": "draft-bridge-chrome",
+    "name": "Bridge（Chrome拡張）",
+    "desc": "Chrome拡張として制作中。MuseとChatGPTが話せるようにする橋渡し役。",
+    "url": "#",
+    "tags": [
+      "AI",
+      "Chrome拡張",
+      "開発中",
+      "紹介"
+    ],
+    "art": ""
+  },
+  {
+    "id": "draft-score-lab",
+    "name": "ai-music-score-lab",
+    "desc": "音源からメロディーやコードを分析し、MusicXMLやMIDIを通じて実際に演奏できるジャズバンド譜を目指す音楽解析・編曲プロジェクト",
+    "url": "assets/03_ai_music_score_lab_concept.png",
+    "tags": [
+      "Music",
+      "AI",
+      "開発中",
+      "紹介"
+    ],
+    "art": "assets/03_ai_music_score_lab_concept.png"
+  },
+  {
+    "id": "draft-tsum",
+    "name": "tsum-vision-planner",
+    "desc": "Windows画面を画像認識して同種オブジェクトを判別し、時間制約内で有望な連結経路を探索する低遅延ビジョン技術検証",
+    "url": "assets/02_tsum_vision_planner_concept.png",
+    "tags": [
+      "AI",
+      "Vision",
+      "技術検証",
+      "紹介"
+    ],
+    "art": "assets/02_tsum_vision_planner_concept.png"
+  },
+  {
+    "art": "",
+    "desc": "スマホ向けPWAのメディアプレイヤー／レコーダー。FFmpegベースの音声ツールキット",
+    "id": "draft-wms",
+    "name": "Web Media Studio",
+    "tags": [
+      "Tool",
+      "Media",
+      "PWA"
+    ],
+    "url": "https://goroyattemiyo.github.io/web-media-studio/"
+  },
+  {
+    "art": "",
+    "desc": "背景除去＆分割 LINEスタンプ用画像へ",
+    "id": "8",
+    "name": "Background Removal",
+    "tags": [
+      "Tool",
+      "Image"
+    ],
+    "url": "https://goroyattemiyo.github.io/Background-removal-splitting/"
+  },
+  {
+    "art": "",
+    "desc": "数秒で心をつかむオープニング系コミュニティ",
+    "id": "3",
+    "name": "Launch Lab",
+    "tags": [
+      "Community"
+    ],
+    "url": "https://goroyattemiyo.github.io/launch-lab/"
+  },
+  {
+    "art": "",
+    "desc": "レトロゲームを並べるよ",
+    "id": "5",
+    "name": "Retro Games",
+    "tags": [
+      "Game"
+    ],
+    "url": "https://goroyattemiyo.github.io/retro-games/"
+  },
+  {
+    "art": "",
+    "desc": "かつらファイトｗ",
+    "id": "11",
+    "name": "かつらファイト",
+    "tags": [
+      "Game"
+    ],
+    "url": "https://goroyattemiyo.github.io/katsura_fight/"
+  },
+  {
+    "art": "",
+    "desc": "Multi-AI Agent Collaborative Development System",
+    "id": "12",
+    "name": "Synapse",
+    "tags": [
+      "AI",
+      "Dev"
+    ],
+    "url": "https://goroyattemiyo.github.io/Synapse/"
+  },
+  {
+    "art": "",
+    "desc": "スクショ撮影直後にOS共有シートから起動し、端末内の任意フォルダに即振り分けるモバイルアプリ（紹介）",
+    "id": "7",
+    "name": "Screenshot Sorter",
+    "tags": [
+      "Tool",
+      "Mobile",
+      "Android",
+      "紹介"
+    ],
+    "url": "https://github.com/goroyattemiyo/screenshot-sorter"
+  },
+  {
+    "art": "",
+    "desc": "Web Media StudioのAndroid版（紹介）",
+    "id": "draft-wms-android",
+    "name": "Web Media Studio Android",
+    "tags": [
+      "Tool",
+      "Media",
+      "Android",
+      "紹介"
+    ],
+    "url": "https://github.com/goroyattemiyo/web-media-studio-android"
+  },
+  {
+    "art": "",
+    "desc": "壁紙に合わせて表示するAndroidスライドショーアプリ（紹介）",
+    "id": "draft-wallpaper",
+    "name": "Wallpaper Fit Slideshow",
+    "tags": [
+      "Tool",
+      "Android",
+      "紹介"
+    ],
+    "url": "https://github.com/goroyattemiyo/wallpaper-fit-slideshow-android"
+  },
+  {
+    "id": "draft-irodori",
+    "name": "Irodori TTS Studio",
+    "desc": "声をデザインし、台本から音声を作って、WAVや動画素材までまとめて出力する（開発記録）",
+    "url": "assets/05-irodori-tts-studio.webp",
+    "tags": [
+      "AI",
+      "Audio",
+      "開発記録",
+      "紹介"
+    ],
+    "art": "assets/05-irodori-tts-studio.webp"
+  },
+  {
+    "art": "",
+    "desc": "Browser Action RPG + Roguelite",
+    "id": "1",
+    "name": "ミプリンの冒険",
+    "tags": [
+      "Game",
+      "RPG",
+      "開発終了"
+    ],
+    "url": "https://goroyattemiyo.github.io/mipurin-adventure/"
+  }
 ]
