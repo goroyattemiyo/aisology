@@ -46,7 +46,8 @@ main{position:relative;z-index:1}
 .sticker-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:1rem}
 .sticker-card{background:var(--card);border:1px solid var(--border);border-radius:12px;overflow:hidden;transition:all .3s ease;text-decoration:none;display:block}
 a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);box-shadow:0 8px 40px rgba(0,212,255,.12)}
-.sticker-media{aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 45%,rgba(0,212,255,.07),transparent 75%);padding:10px}
+.sticker-media{position:relative;aspect-ratio:1/1;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 45%,rgba(0,212,255,.07),transparent 75%);padding:10px}
+.fail-badge{position:absolute;top:8px;left:8px;z-index:2;background:#e5484d;color:#fff;font-family:'Noto Sans JP',sans-serif;font-size:.68rem;font-weight:700;letter-spacing:.08em;padding:.28rem .55rem;border-radius:4px;box-shadow:0 2px 8px rgba(0,0,0,.45)}
 .sticker-media img{max-width:100%;max-height:100%;object-fit:contain;display:block}
 .sticker-info{display:flex;flex-direction:column;gap:.15rem;padding:.7rem .9rem;border-top:1px solid rgba(0,212,255,.08)}
 .sticker-name{font-size:.8rem;color:var(--text)}
@@ -84,6 +85,7 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <div class="divider"></div>
 <p class="body-text">コンシュは、制作者 <strong>goro</strong> のオリジナルキャラクターです。公式紹介文は「<strong>エジプトの月の神をルーツに持つ、Yattemiyo Toolsのマスコット。月夜と、新しい道具が生まれる場所に現れます。</strong>」キャラクターは初期デザインから展開され、最初のスタンプ作品「KhonshStamp2」（全40種）の原画とシートも下に掲載しています。現在のアニメーション作品では、いつも半眼で、感情は表情よりも身振りで表すのが特徴です。これまでに、日常のあいさつや感情表現を集めた<strong>アニメーションスタンプ全19種</strong>と、季節のコスチュームを着た<strong>GIPHYステッカー全24種</strong>（クリスマス12種・ハロウィン12種）を制作しました。すべての作品はこのページと下記の公式チャンネルで公開しています。</p>
 <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:2rem">
+<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_latest_master.jpg" alt="Konshu latest character master"></div><div class="sticker-info"><span class="sticker-name">最新の原図</span><span class="sticker-en">Latest master</span></div></div>
 <div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu-guide-master.png" alt="Konshu original design — guide master"></div><div class="sticker-info"><span class="sticker-name">初期デザイン（公式マスター）</span><span class="sticker-en">Original design</span></div></div>
 <div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu.webp" alt="Konshu 3D figure style"></div><div class="sticker-info"><span class="sticker-name">立体アート</span><span class="sticker-en">3D figure</span></div></div>
 <div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_2d_wave_full.png" alt="Konshu full body — wave"></div><div class="sticker-info"><span class="sticker-name">コンシュ（全身）</span><span class="sticker-en">Full body</span></div></div>
@@ -106,7 +108,7 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 </div>
 </div>
 <h3 class="sub-title">スタンプシート（60種から40種を選定）</h3>
-<div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/stamp_sheet.png" alt="Konshu LINE stamp sheet" style="width:100%"></div></div>
+<div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/stamp_sheet.jpg" alt="Konshu LINE stamp sheet" style="width:100%"></div></div>
 <h3 class="sub-title">表情素材シート（27種）</h3>
 <div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/expressions.png" alt="Konshu expression sheet" style="width:100%"></div></div>
 </section>
@@ -218,6 +220,12 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <div class="sticker-info"><span class="sticker-name">こうもり</span><span class="sticker-en">bat</span></div>
 </a>
 </div>
+<h3 class="sub-title">原画シート — ハロウィン</h3>
+<p class="body-text">ハロウィンステッカーの原画シートです。左がいつもの半眼を保った通常版、右が表情のバリエーション版です。</p>
+<div style="display:flex;gap:1.5rem;flex-wrap:wrap">
+<div class="sticker-card" style="flex:1;min-width:260px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><img src="assets/sheets/halloween_original_a.jpg" alt="Konshu Halloween original sheet — standard" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">原画（通常版）</span><span class="sticker-en">Original sheet A</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:260px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><img src="assets/sheets/halloween_original_b.jpg" alt="Konshu Halloween original sheet — expressive variation" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">原画（表情バリエーション版）</span><span class="sticker-en">Original sheet B</span></div></div>
+</div>
 </section>
 
 <section class="section-wrap">
@@ -309,22 +317,22 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <p class="section-label">Works 04</p>
 <h2 class="section-title">初期シリーズ</h2>
 <div class="divider"></div>
-<p class="body-text">コンシュのアニメーションスタンプは、ここから始まりました。喜ぶ・怒る・おじぎ・うなずきの4種です。</p>
+<p class="body-text">コンシュのアニメーションスタンプは、ここから始まりました。喜ぶ・怒る・おじぎ・うなずきの4種です。いずれも初期の失敗作のため、失敗作マークを付けています。</p>
 <div class="sticker-grid">
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/early/konshu_joy_apng.png" alt="Konshu joy early animated stamp" loading="lazy"></div>
+<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_joy_apng.png" alt="Konshu joy early animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">喜ぶ</span><span class="sticker-en">joy</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/early/konshu_angry_apng.png" alt="Konshu angry early animated stamp" loading="lazy"></div>
+<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_angry_apng.png" alt="Konshu angry early animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">怒る</span><span class="sticker-en">angry</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/early/konshu_bow_apng.png" alt="Konshu bow early animated stamp" loading="lazy"></div>
+<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_bow_apng.png" alt="Konshu bow early animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">おじぎ</span><span class="sticker-en">bow</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/early/konshu_bob.png" alt="Konshu bob early animated stamp" loading="lazy"></div>
+<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_bob.png" alt="Konshu bob early animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">うなずき</span><span class="sticker-en">bob</span></div>
 </div>
 </div>
