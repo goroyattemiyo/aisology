@@ -51,6 +51,13 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 .history-list{list-style:none;margin:1.25rem 0;max-width:720px}
 .history-list li{padding:.5rem 0 .5rem 1.1rem;border-left:2px solid rgba(0,212,255,.25);margin-bottom:.35rem;color:var(--sub);line-height:1.8;font-size:.92rem;font-weight:300}
 .history-list strong{color:var(--text);font-weight:500}
+.history-fig{margin:1rem 0 1.25rem;max-width:340px}
+.history-fig img{width:100%;display:block;border-radius:10px;border:1px solid rgba(0,212,255,.25)}
+.history-fig figcaption,.history-list figcaption{font-family:'Space Mono',monospace;font-size:.68rem;color:var(--sub);margin-top:.45rem;letter-spacing:.04em}
+.history-list figure{margin:.6rem 0 .2rem;max-width:200px}
+.history-list figure img{width:100%;border-radius:10px;border:1px solid rgba(0,212,255,.25);display:block}
+.history-pair{display:flex;gap:.6rem;flex-wrap:wrap}
+.history-pair figure{margin:0;max-width:200px;flex:1 1 140px}
 .body-text a{color:var(--neon);text-decoration:none}
 .body-text a:hover{text-decoration:underline}
 .sticker-media img{max-width:100%;max-height:100%;object-fit:contain;display:block}
@@ -66,6 +73,25 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 .nav-link:hover{color:var(--neon);border-color:var(--border)}
 .nav-link.active{color:var(--neon);border-color:var(--neon)}
 .footer-note{text-align:center;padding:0 2rem 3rem;color:var(--sub);font-size:.72rem;font-family:'Space Mono',monospace;letter-spacing:.15em}
+
+.gal-chips{display:flex;gap:.5rem;flex-wrap:wrap;margin:1.75rem 0 1rem}
+.gal-chip{background:var(--card);color:var(--sub);border:1px solid var(--border);border-radius:999px;padding:.4rem 1rem;font-size:.8rem;cursor:pointer;font-family:'Noto Sans JP',sans-serif}
+.gal-chip.on{color:#03101f;background:var(--neon);border-color:var(--neon);font-weight:700}
+.gal-stage{position:relative;background:var(--card);border:1px solid var(--border);border-radius:16px;overflow:hidden}
+.gal-imgbox{height:min(60vh,540px);display:flex;align-items:center;justify-content:center;background:radial-gradient(circle at 50% 45%,rgba(0,212,255,.07),transparent 75%)}
+.gal-imgbox img{max-width:100%;max-height:100%;object-fit:contain;display:block}
+.gal-nav{position:absolute;top:36%;width:44px;height:44px;border-radius:50%;border:1px solid var(--neon);background:rgba(3,13,26,.7);color:var(--neon);font-size:1.3rem;cursor:pointer;line-height:1;z-index:2}
+.gal-prev{left:.8rem}
+.gal-next{right:.8rem}
+.gal-cap{display:flex;align-items:center;gap:.8rem;padding:.9rem 1.2rem 1rem;border-top:1px solid rgba(0,212,255,.08);flex-wrap:wrap}
+.gal-t{font-size:1rem;font-weight:500;color:var(--text)}
+.gal-g{font-size:.68rem;color:var(--neon);border:1px solid var(--border);border-radius:999px;padding:.15rem .6rem;white-space:nowrap}
+.gal-c{margin-left:auto;color:var(--sub);font-size:.8rem;font-family:'Space Mono',monospace}
+.gal-bar{display:flex;justify-content:center;margin-top:.9rem}
+.gal-bar button{background:var(--card);color:var(--sub);border:1px solid var(--border);border-radius:8px;padding:.5rem 1.1rem;font-size:.8rem;cursor:pointer;font-family:'Noto Sans JP',sans-serif}
+.gal-thumbs{display:flex;gap:.5rem;overflow-x:auto;padding:.9rem .1rem .2rem}
+.gal-thumbs img{width:60px;height:60px;object-fit:cover;border-radius:8px;border:2px solid transparent;cursor:pointer;opacity:.5;flex:0 0 auto}
+.gal-thumbs img.on{border-color:var(--neon);opacity:1}
 </style>
 </head>
 <body>
@@ -77,7 +103,7 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <div class="hero-ring"></div>
 <div class="hero-ring"></div>
 <p class="hero-label">Aisology — Creator</p>
-<div class="hero-avatar"><img src="assets/konshu_avatar.png" alt="Khonshu"></div>
+<div class="hero-avatar"><img src="assets/konshu_avatar.webp" alt="Khonshu"></div>
 <h1 class="hero-title">KHONSHU</h1>
 <p class="hero-sub">[ コンシュ ]</p>
 <p class="hero-desc">黒いカラスのような鳥が、白いフード付きコートを着たオリジナルキャラクター。<br>アニメーションスタンプとステッカーを制作しています。</p>
@@ -90,11 +116,11 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <div class="divider"></div>
 <p class="body-text">コンシュは、制作者 <strong>goro</strong> のオリジナルキャラクターです。公式紹介文は「<strong>エジプトの月の神をルーツに持つ、Yattemiyo Toolsのマスコット。月夜と、新しい道具が生まれる場所に現れます。</strong>」キャラクターは初期デザインから展開され、最初のスタンプ作品「KhonshStamp2」（全40種）の原画とシートも下に掲載しています。現在のアニメーション作品では、いつも半眼で、感情は表情よりも身振りで表すのが特徴です。これまでに、日常のあいさつや感情表現を集めた<strong>アニメーションスタンプ全19種</strong>と、季節のコスチュームを着た<strong>GIPHYステッカー全24種</strong>（クリスマス12種・ハロウィン12種）を制作しました。すべての作品はこのページと下記の公式チャンネルで公開しています。</p>
 <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:1rem;margin-top:2rem">
-<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_latest_master.jpg" alt="Khonshu latest character master"></div><div class="sticker-info"><span class="sticker-name">最新の原図</span><span class="sticker-en">Latest master</span></div></div>
-<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu-guide-master.png" alt="Khonshu original design — guide master"></div><div class="sticker-info"><span class="sticker-name">初期デザイン（公式マスター）</span><span class="sticker-en">Original design</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_latest_master.webp" alt="Khonshu latest character master"></div><div class="sticker-info"><span class="sticker-name">最新の原図</span><span class="sticker-en">Latest master</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu-guide-master.webp" alt="Khonshu original design — guide master"></div><div class="sticker-info"><span class="sticker-name">初期デザイン（公式マスター）</span><span class="sticker-en">Original design</span></div></div>
 <div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu.webp" alt="Khonshu 3D figure style"></div><div class="sticker-info"><span class="sticker-name">立体アート</span><span class="sticker-en">3D figure</span></div></div>
-<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_2d_wave_full.png" alt="Khonshu full body — wave"></div><div class="sticker-info"><span class="sticker-name">コンシュ（全身）</span><span class="sticker-en">Full body</span></div></div>
-<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_2d_sleepy_full.png" alt="Khonshu full body — sleepy"></div><div class="sticker-info"><span class="sticker-name">コンシュ（ねむい）</span><span class="sticker-en">Sleepy</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_2d_wave_full.webp" alt="Khonshu full body — wave"></div><div class="sticker-info"><span class="sticker-name">コンシュ（全身）</span><span class="sticker-en">Full body</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:200px"><div class="sticker-media" style="aspect-ratio:4/3"><img src="assets/char/konshu_2d_sleepy_full.webp" alt="Khonshu full body — sleepy"></div><div class="sticker-info"><span class="sticker-name">コンシュ（ねむい）</span><span class="sticker-en">Sleepy</span></div></div>
 </div>
 <div class="en-box">
 <p class="en-label">About — English</p>
@@ -102,16 +128,34 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 </div>
 <h3 class="sub-title">来歴 — コンス（Khonsu）</h3>
 <p class="body-text">コンシュのモデルは、古代エジプトの月の神<strong>コンス（Khonsu）</strong>です。制作者のThreads紹介スレッドをもとに、その来歴をまとめます。</p>
+<figure class="history-fig"><img src="assets/history/khonsu_thread.webp" alt="Khonsu holding a crescent-moon staff, ancient Egyptian style illustration from the introduction thread"><figcaption>紹介スレッドの投稿画像。三日月の杖を持つコンス</figcaption></figure>
 <ul class="history-list">
-<li><strong>名前と意味</strong>：コンス＝「横切る者」。夜空を月の船で滑るように横切り、満月と三日月を操る月の守護神。</li>
+<li><strong>名前と意味</strong>：コンス＝「横切る者」。夜空を月の船で滑るように横切り、満月と三日月を操る月の守護神。<figure><img src="assets/history/khonsu_profile.webp" alt="Khonsu in profile wearing a crown of full-moon disc and crescent" loading="lazy"><figcaption>満月と三日月の冠を戴くコンス</figcaption></figure></li>
 <li><strong>姿</strong>：少年の姿（包帯ミイラ風＋片側の髪）と、ハヤブサ頭に三日月＋満月の王冠を戴く姿の2スタイルが代表的。</li>
 <li><strong>得意技</strong>：満月＝ヒーリング（病や怪我の回復）、三日月＝邪気を祓うカッターモード。</li>
 <li><strong>役割とご利益</strong>：癒し・時間・豊穣・航海の守護。月の満ち欠けで暦を管理する時間の神で、夜間航海の守護者として信仰が厚かった。</li>
-<li><strong>家族</strong>：父は最高神アメン、母は女神ムト。テーベの三柱神のひとり。</li>
+<li><strong>家族</strong>：父は最高神アメン、母は女神ムト。テーベの三柱神のひとり。<div class="history-pair"><figure><img src="assets/history/amun.webp" alt="Amun, father of Khonsu, wearing a tall feathered crown" loading="lazy"><figcaption>父アメン</figcaption></figure><figure><img src="assets/history/mut.webp" alt="Mut, mother of Khonsu, holding an ankh" loading="lazy"><figcaption>母ムト</figcaption></figure></div></li>
 <li><strong>神殿</strong>：カルナック神殿の「コンス神殿」が月神信仰の拠点。</li>
 <li><strong>人々との関わり</strong>：病気や怪我の回復祈願、船旅や遠出の安全祈願で頼られ、王や高官も守護を求めた。農業や暦にも直結する、庶民にも身近な月神。</li>
 </ul>
 <p class="body-text">出典：<a href="https://www.threads.com/@goro_yattemiyo_/post/DNJguA5zWMt" target="_blank" rel="noopener">「コンシュってなんぞや」Threads紹介スレッド</a>（@goro_yattemiyo_、2025-08-10）</p>
+</section>
+
+
+<section class="section-wrap">
+<p class="section-label">Gallery</p>
+<h2 class="section-title">ギャラリー</h2>
+<div class="divider"></div>
+<p class="body-text">Threadsの投稿から集めた、いろいろな姿のコンシュです。カードを送ると別の姿が見られます。</p>
+<div class="gal-chips" id="gal-chips"></div>
+<div class="gal-stage">
+<div class="gal-imgbox"><img id="gal-main" alt=""></div>
+<button class="gal-nav gal-prev" id="gal-prev" aria-label="前へ">‹</button>
+<button class="gal-nav gal-next" id="gal-next" aria-label="次へ">›</button>
+<div class="gal-cap"><span class="gal-t" id="gal-title"></span><span class="gal-g" id="gal-group"></span><span class="gal-c" id="gal-count"></span></div>
+</div>
+<div class="gal-bar"><button id="gal-play">▶ 自動再生</button></div>
+<div class="gal-thumbs" id="gal-thumbs"></div>
 </section>
 
 <section class="section-wrap">
@@ -119,15 +163,15 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <h2 class="section-title">LINEスタンプ</h2>
 <div class="divider"></div>
 <div style="display:flex;gap:2rem;flex-wrap:wrap;align-items:flex-start">
-<div class="sticker-card" style="width:240px;flex:none"><div class="sticker-media"><img src="assets/line/main.png" alt="KhonshStamp2 main image"></div><div class="sticker-info"><span class="sticker-name">KhonshStamp2</span><span class="sticker-en">作品シート</span></div></div>
+<div class="sticker-card" style="width:240px;flex:none"><div class="sticker-media"><img src="assets/line/main.webp" alt="KhonshStamp2 main image"></div><div class="sticker-info"><span class="sticker-name">KhonshStamp2</span><span class="sticker-en">作品シート</span></div></div>
 <div style="flex:1;min-width:260px">
 <p class="body-text">コンシュ最初のスタンプ作品です。全40種のスタンプセット「<strong>KhonshStamp2</strong>」の原画とシートです。</p>
 </div>
 </div>
 <h3 class="sub-title">スタンプシート（60種から40種を選定）</h3>
-<div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/stamp_sheet.jpg" alt="Khonshu LINE stamp sheet" style="width:100%"></div></div>
+<div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/stamp_sheet.webp" alt="Khonshu LINE stamp sheet" style="width:100%"></div></div>
 <h3 class="sub-title">表情素材シート（27種）</h3>
-<div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/expressions.png" alt="Khonshu expression sheet" style="width:100%"></div></div>
+<div class="sticker-card"><div class="sticker-media" style="aspect-ratio:auto"><img src="assets/line/expressions.webp" alt="Khonshu expression sheet" style="width:100%"></div></div>
 </section>
 
 <section class="section-wrap">
@@ -138,113 +182,113 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <h3 class="sub-title">Christmas — クリスマス（12種）</h3>
 <div class="sticker-grid">
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-reindeer-konshu-PoK9qFI3U8BUl8VA0O" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_reindeer_pose6_256.gif" alt="Khonshu reindeer animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_reindeer_pose6_256.webp" alt="Khonshu reindeer animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">トナカイ</span><span class="sticker-en">reindeer</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-elf-konshu-qfkIT6DKYvCbZp6ogs" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_elf_pose6_256.gif" alt="Khonshu elf animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_elf_pose6_256.webp" alt="Khonshu elf animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">エルフ</span><span class="sticker-en">elf</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-snowman-konshu-1r5kM6gQQkxsXZMtIp" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_snowman_pose6_256.gif" alt="Khonshu snowman animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_snowman_pose6_256.webp" alt="Khonshu snowman animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">雪だるま</span><span class="sticker-en">snowman</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-tree-konshu-Pr9T5N5v3jcR95XKCI" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_tree_pose6_256.gif" alt="Khonshu tree animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_tree_pose6_256.webp" alt="Khonshu tree animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">クリスマスツリー</span><span class="sticker-en">tree</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-gingerbread-konshu-AvdQuxKIrr0JemjH5c" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_gingerbread_pose6_256.gif" alt="Khonshu gingerbread animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_gingerbread_pose6_256.webp" alt="Khonshu gingerbread animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ジンジャーブレッド</span><span class="sticker-en">gingerbread</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-nutcracker-konshu-dN4bTzgQMO34nmjgYr" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_nutcracker_pose6_256.gif" alt="Khonshu nutcracker animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_nutcracker_pose6_256.webp" alt="Khonshu nutcracker animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">くるみ割り人形</span><span class="sticker-en">nutcracker</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-angel-konshu-xHMirzPycD45gg2j27" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_angel_pose6_256.gif" alt="Khonshu angel animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_angel_pose6_256.webp" alt="Khonshu angel animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">天使</span><span class="sticker-en">angel</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-candy-cane-konshu-qv0bLZWUudACIYxiWB" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_candycane_pose6_256.gif" alt="Khonshu candycane animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_candycane_pose6_256.webp" alt="Khonshu candycane animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">キャンディケイン</span><span class="sticker-en">candycane</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-gift-konshu-o1l80Nf24dbppyDoQm" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_gift_pose6_256.gif" alt="Khonshu gift animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_gift_pose6_256.webp" alt="Khonshu gift animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ギフト</span><span class="sticker-en">gift</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-wreath-konshu-EY9q3nXZbAscR03KvW" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_wreath_pose6_256.gif" alt="Khonshu wreath animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_wreath_pose6_256.webp" alt="Khonshu wreath animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">リース</span><span class="sticker-en">wreath</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-poinsettia-konshu-K6qy7hsGti0nVnhIIc" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_poinsettia_pose6_256.gif" alt="Khonshu poinsettia animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_poinsettia_pose6_256.webp" alt="Khonshu poinsettia animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ポインセチア</span><span class="sticker-en">poinsettia</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/christmas-konshu-snow-fairy-WNjFk1QjCIi6hsNfaO" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_snowfairy_pose6_256.gif" alt="Khonshu snowfairy animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_snowfairy_pose6_256.webp" alt="Khonshu snowfairy animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">雪の妖精</span><span class="sticker-en">snowfairy</span></div>
 </a>
 </div>
 <h3 class="sub-title">Halloween — ハロウィン（12種）</h3>
 <div class="sticker-grid">
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-witch-konshu-E4iHXL8bQejZrlLSdF" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_witch_pose6_256.gif" alt="Khonshu witch animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_witch_pose6_256.webp" alt="Khonshu witch animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">魔女</span><span class="sticker-en">witch</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-vampire-konshu-ArQRX2azrT6bJbjOCY" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_vampire_pose6_256.gif" alt="Khonshu vampire animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_vampire_pose6_256.webp" alt="Khonshu vampire animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ヴァンパイア</span><span class="sticker-en">vampire</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-mummy-konshu-mJElOgkONiAiPgP7qW" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_mummy_pose6_256.gif" alt="Khonshu mummy animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_mummy_pose6_256.webp" alt="Khonshu mummy animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ミイラ</span><span class="sticker-en">mummy</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-ghost-konshu-CzjFAtKjc0hTi3P4Lx" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_ghost_pose6_256.gif" alt="Khonshu ghost animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_ghost_pose6_256.webp" alt="Khonshu ghost animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ゴースト</span><span class="sticker-en">ghost</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-pumpkin-konshu-P0LvVBJE1q8ZPZM08x" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_pumpkin_pose6_256.gif" alt="Khonshu pumpkin animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_pumpkin_pose6_256.webp" alt="Khonshu pumpkin animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">かぼちゃ</span><span class="sticker-en">pumpkin</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-black-cat-konshu-amTPgMfjcHruZlrhWr" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_blackcat_pose6_256.gif" alt="Khonshu blackcat animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_blackcat_pose6_256.webp" alt="Khonshu blackcat animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">黒猫</span><span class="sticker-en">blackcat</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-devil-konshu-YzYeyYqE2AVgvhGZ6m" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_devil_pose6_256.gif" alt="Khonshu devil animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_devil_pose6_256.webp" alt="Khonshu devil animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">悪魔</span><span class="sticker-en">devil</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-skeleton-konshu-hVJqSkqhhkmVTzMCcR" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_skeleton_pose6_256.gif" alt="Khonshu skeleton animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_skeleton_pose6_256.webp" alt="Khonshu skeleton animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">がいこつ</span><span class="sticker-en">skeleton</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-frankenstein-konshu-uNtVx2ZT4fV3fZE0LN" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_frankenstein_pose6_256.gif" alt="Khonshu frankenstein animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_frankenstein_pose6_256.webp" alt="Khonshu frankenstein animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">フランケンシュタイン</span><span class="sticker-en">frankenstein</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-zombie-konshu-t4ff9VEwUg4FPmOJyx" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_zombie_pose6_256.gif" alt="Khonshu zombie animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_zombie_pose6_256.webp" alt="Khonshu zombie animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ゾンビ</span><span class="sticker-en">zombie</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-grim-reaper-konshu-E5nvNNWMBEmHapliPF" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_reaper_pose6_256.gif" alt="Khonshu reaper animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_reaper_pose6_256.webp" alt="Khonshu reaper animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">死神</span><span class="sticker-en">reaper</span></div>
 </a>
 <a class="sticker-card" href="https://giphy.com/stickers/halloween-bat-konshu-SBd99LjeuTeMJhonLl" target="_blank" rel="noopener">
-<div class="sticker-media"><img src="assets/giphy/konshu_bat_pose6_256.gif" alt="Khonshu bat animated sticker" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/giphy/konshu_bat_pose6_256.webp" alt="Khonshu bat animated sticker" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">こうもり</span><span class="sticker-en">bat</span></div>
 </a>
 </div>
 <h3 class="sub-title">原画シート — ハロウィン</h3>
 <p class="body-text">ハロウィンステッカーの原画シートです。左がいつもの半眼を保った通常版、右が表情のバリエーション版です。</p>
 <div style="display:flex;gap:1.5rem;flex-wrap:wrap">
-<div class="sticker-card" style="flex:1;min-width:260px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><img src="assets/sheets/halloween_original_a.jpg" alt="Khonshu Halloween original sheet — standard" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">原画（通常版）</span><span class="sticker-en">Original sheet A</span></div></div>
-<div class="sticker-card" style="flex:1;min-width:260px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><img src="assets/sheets/halloween_original_b.jpg" alt="Khonshu Halloween original sheet — expressive variation" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">原画（表情バリエーション版）</span><span class="sticker-en">Original sheet B</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:260px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><img src="assets/sheets/halloween_original_a.webp" alt="Khonshu Halloween original sheet — standard" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">原画（通常版）</span><span class="sticker-en">Original sheet A</span></div></div>
+<div class="sticker-card" style="flex:1;min-width:260px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><img src="assets/sheets/halloween_original_b.webp" alt="Khonshu Halloween original sheet — expressive variation" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">原画（表情バリエーション版）</span><span class="sticker-en">Original sheet B</span></div></div>
 </div>
 <h3 class="sub-title">失敗作 — 透過消失</h3>
-<div class="sticker-card" style="max-width:560px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><span class="fail-badge">✕ 失敗作</span><img src="assets/failures/f06_transparency_loss.jpg" alt="Khonshu sticker transparency loss failure — reproduction" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">透過が消えたステッカー（再現図）</span><span class="sticker-en">Transparency loss — reproduction</span></div></div>
+<div class="sticker-card" style="max-width:560px"><div class="sticker-media" style="aspect-ratio:auto;padding:0"><span class="fail-badge">✕ 失敗作</span><img src="assets/failures/f06_transparency_loss.webp" alt="Khonshu sticker transparency loss failure — reproduction" style="width:100%" loading="lazy"></div><div class="sticker-info"><span class="sticker-name">透過が消えたステッカー（再現図）</span><span class="sticker-en">Transparency loss — reproduction</span></div></div>
 <p class="body-text" style="margin-top:1rem">ノイズ除去フィルタの影響で、全24種の透過が失われて黒背景のステッカーになった失敗作です。GIPHYへのアップロード時に「No transparency detected」と弾かれて発覚し、透過を保持する方式で全種を作り直しました。当時のファイルは残っていないため、この画像は再現図です。</p>
 </section>
 
@@ -255,79 +299,79 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <p class="body-text">日常のあいさつと感情表現を集めたアニメーションスタンプシリーズ（全19種）。コンシュの「表情は変えず、身振りで伝える」表現がシリーズのテーマです。</p>
 <div class="sticker-grid">
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_wave.png" alt="Khonshu wave animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_wave.webp" alt="Khonshu wave animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">手を振る</span><span class="sticker-en">wave</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_bow.png" alt="Khonshu bow animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_bow.webp" alt="Khonshu bow animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">おじぎ</span><span class="sticker-en">bow</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_clap.png" alt="Khonshu clap animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_clap.webp" alt="Khonshu clap animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">拍手</span><span class="sticker-en">clap</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_nod.png" alt="Khonshu nod animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_nod.webp" alt="Khonshu nod animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">うなずく</span><span class="sticker-en">nod</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_no.png" alt="Khonshu no animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_no.webp" alt="Khonshu no animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">いやいや</span><span class="sticker-en">no</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_tilt.png" alt="Khonshu tilt animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_tilt.webp" alt="Khonshu tilt animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">首かしげ</span><span class="sticker-en">tilt</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_jump.png" alt="Khonshu jump animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_jump.webp" alt="Khonshu jump animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ジャンプ</span><span class="sticker-en">jump</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_spin.png" alt="Khonshu spin animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_spin.webp" alt="Khonshu spin animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">くるっと回る</span><span class="sticker-en">spin</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_step.png" alt="Khonshu step animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_step.webp" alt="Khonshu step animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">小躍り</span><span class="sticker-en">step</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_arms.png" alt="Khonshu arms animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_arms.webp" alt="Khonshu arms animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">両手あげ</span><span class="sticker-en">arms</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_angry2.png" alt="Khonshu angry2 animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_angry2.webp" alt="Khonshu angry2 animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">もう！と怒る</span><span class="sticker-en">angry2</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_shock.png" alt="Khonshu shock animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_shock.webp" alt="Khonshu shock animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">びっくり</span><span class="sticker-en">shock</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_cry.png" alt="Khonshu cry animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_cry.webp" alt="Khonshu cry animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">泣く</span><span class="sticker-en">cry</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_worry.png" alt="Khonshu worry animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_worry.webp" alt="Khonshu worry animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">はらはら</span><span class="sticker-en">worry</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_down.png" alt="Khonshu down animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_down.webp" alt="Khonshu down animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">しょんぼり</span><span class="sticker-en">down</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_breath.png" alt="Khonshu breath animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_breath.webp" alt="Khonshu breath animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">ひと息</span><span class="sticker-en">breath</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_doze.png" alt="Khonshu doze animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_doze.webp" alt="Khonshu doze animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">うとうと</span><span class="sticker-en">doze</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_yawn.png" alt="Khonshu yawn animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_yawn.webp" alt="Khonshu yawn animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">あくび</span><span class="sticker-en">yawn</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><img src="assets/stamps/konshu_2d_sleep.png" alt="Khonshu sleep animated stamp" loading="lazy"></div>
+<div class="sticker-media"><img src="assets/stamps/konshu_2d_sleep.webp" alt="Khonshu sleep animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">おやすみ</span><span class="sticker-en">sleep</span></div>
 </div>
 </div>
@@ -340,11 +384,11 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 <p class="body-text">コンシュのアニメーションスタンプは、ここから始まりました。喜ぶ・怒る・おじぎ・うなずきの4種です。いずれも初期の失敗作のため、失敗作マークを付けています。</p>
 <div class="sticker-grid">
 <div class="sticker-card">
-<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_joy_apng.png" alt="Khonshu joy early animated stamp" loading="lazy"></div>
+<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_joy_apng.webp" alt="Khonshu joy early animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">喜ぶ</span><span class="sticker-en">joy</span></div>
 </div>
 <div class="sticker-card">
-<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_angry_apng.png" alt="Khonshu angry early animated stamp" loading="lazy"></div>
+<div class="sticker-media"><span class="fail-badge">✕ 失敗作</span><img src="assets/early/konshu_angry_apng.webp" alt="Khonshu angry early animated stamp" loading="lazy"></div>
 <div class="sticker-info"><span class="sticker-name">怒る</span><span class="sticker-en">angry</span></div>
 </div>
 <div class="sticker-card">
@@ -378,5 +422,56 @@ a.sticker-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-3px);
 </nav>
 <p class="footer-note">© 2026 Aisology. AIと共に探求する。</p>
 </main>
+
+<script>
+const GAL = [{"img": "assets/gallery/00.webp", "title": "コントラバスのコンシュ", "group": "紹介"}, {"img": "assets/gallery/01.webp", "title": "金の杖のチビ（笑顔）", "group": "紹介"}, {"img": "assets/gallery/02.webp", "title": "編みぐるみのコンシュ", "group": "紹介"}, {"img": "assets/gallery/03.webp", "title": "コンス ― 金の衣と三日月の杖", "group": "来歴"}, {"img": "assets/gallery/04.webp", "title": "顔の絵画調イラスト", "group": "紹介"}, {"img": "assets/gallery/05.webp", "title": "スマホ壁紙のコンシュ", "group": "紹介"}, {"img": "assets/gallery/06.webp", "title": "コンス ― 墨絵と赤い三日月", "group": "来歴"}, {"img": "assets/gallery/07.webp", "title": "正座待機！（ファラオ姿）", "group": "来歴"}, {"img": "assets/gallery/08.webp", "title": "野外の巨大な石像", "group": "来歴"}, {"img": "assets/gallery/09.webp", "title": "初期の線画スケッチ", "group": "来歴"}, {"img": "assets/gallery/10.webp", "title": "腕組みで立つ（黒背景）", "group": "長身"}, {"img": "assets/gallery/11.webp", "title": "姉さんのためにイー!!", "group": "長身"}, {"img": "assets/gallery/12.webp", "title": "ワイングラスと夜景", "group": "長身"}, {"img": "assets/gallery/13.webp", "title": "テイスティングノート", "group": "長身"}, {"img": "assets/gallery/14.webp", "title": "ダークなポスター", "group": "長身"}, {"img": "assets/gallery/15.webp", "title": "戦士風（緑の着物）", "group": "長身"}, {"img": "assets/gallery/16.webp", "title": "チビ全身（大きな白目）", "group": "チビ・スタンプ"}, {"img": "assets/gallery/17.webp", "title": "メガネのチビ", "group": "チビ・スタンプ"}, {"img": "assets/gallery/18.webp", "title": "おはよう", "group": "チビ・スタンプ"}, {"img": "assets/gallery/19.webp", "title": "OK！", "group": "チビ・スタンプ"}, {"img": "assets/gallery/20.webp", "title": "どアップ（指さし）", "group": "チビ・スタンプ"}, {"img": "assets/gallery/21.webp", "title": "顔ドアップ（丸目）", "group": "チビ・スタンプ"}, {"img": "assets/gallery/22.webp", "title": "驚き顔", "group": "チビ・スタンプ"}, {"img": "assets/gallery/23.webp", "title": "絶叫顔", "group": "チビ・スタンプ"}, {"img": "assets/gallery/24.webp", "title": "コンシュスタンプ3", "group": "チビ・スタンプ"}, {"img": "assets/gallery/25.webp", "title": "初期スタンプ（またねー／お先に／寝る）", "group": "チビ・スタンプ"}, {"img": "assets/gallery/26.webp", "title": "ゴースト姿の線画", "group": "チビ・スタンプ"}, {"img": "assets/gallery/27.webp", "title": "両手を上げて喜ぶ", "group": "チビ・スタンプ"}, {"img": "assets/gallery/28.webp", "title": "カード ― カエル雨具", "group": "チビ・スタンプ"}, {"img": "assets/gallery/29.webp", "title": "カード ― 腕組み", "group": "チビ・スタンプ"}, {"img": "assets/gallery/30.webp", "title": "カード ― 半眼", "group": "チビ・スタンプ"}, {"img": "assets/gallery/31.webp", "title": "", "group": "おもしろ"}, {"img": "assets/gallery/32.webp", "title": "三輪車（交通安全）", "group": "おもしろ"}, {"img": "assets/gallery/33.webp", "title": "バトンタッチ!!", "group": "おもしろ"}, {"img": "assets/gallery/34.webp", "title": "マンガ3コマ絶叫", "group": "おもしろ"}, {"img": "assets/gallery/35.webp", "title": "推しがかっこよすぎて滅", "group": "おもしろ"}, {"img": "assets/gallery/36.webp", "title": "クリスマス12体シート", "group": "おもしろ"}, {"img": "assets/gallery/37.webp", "title": "ハロウィン12体（チビ）", "group": "おもしろ"}, {"img": "assets/gallery/38.webp", "title": "かぼちゃコンシュ", "group": "おもしろ"}, {"img": "assets/gallery/39.webp", "title": "ゾンビの3D", "group": "おもしろ"}, {"img": "assets/gallery/40.webp", "title": "魔女の3D（小サイズ）", "group": "おもしろ"}];
+(function () {
+  let group = '全部', list = GAL, idx = 0, timer = null;
+  const $ = id => document.getElementById(id);
+  const groups = ['全部', ...new Set(GAL.map(s => s.group))];
+  function renderChips() {
+    $('gal-chips').innerHTML = '';
+    groups.forEach(g => {
+      const b = document.createElement('button');
+      b.className = 'gal-chip' + (g === group ? ' on' : '');
+      b.textContent = g === '全部' ? '全部 (' + GAL.length + ')' : g;
+      b.onclick = () => { group = g; list = g === '全部' ? GAL : GAL.filter(s => s.group === g); idx = 0; renderChips(); render(); };
+      $('gal-chips').appendChild(b);
+    });
+  }
+  function render() {
+    const s = list[idx];
+    $('gal-main').src = s.img; $('gal-main').alt = s.title;
+    $('gal-title').textContent = s.title; $('gal-group').textContent = s.group;
+    $('gal-count').textContent = (idx + 1) + ' / ' + list.length;
+    $('gal-thumbs').innerHTML = '';
+    list.forEach((t, i) => {
+      const im = document.createElement('img');
+      im.src = t.img; im.alt = t.title; im.loading = 'lazy';
+      if (i === idx) im.className = 'on';
+      im.onclick = () => { idx = i; render(); };
+      $('gal-thumbs').appendChild(im);
+    });
+  }
+  function step(d) { idx = (idx + d + list.length) % list.length; render(); }
+  $('gal-prev').onclick = () => step(-1);
+  $('gal-next').onclick = () => step(1);
+  document.addEventListener('keydown', e => { if (e.key === 'ArrowLeft') step(-1); if (e.key === 'ArrowRight') step(1); });
+  let tx = null;
+  const stage = document.querySelector('.gal-stage');
+  stage.addEventListener('touchstart', e => tx = e.touches[0].clientX);
+  stage.addEventListener('touchend', e => {
+    if (tx === null) return;
+    const dx = e.changedTouches[0].clientX - tx;
+    if (Math.abs(dx) > 40) step(dx < 0 ? 1 : -1);
+    tx = null;
+  });
+  $('gal-play').onclick = () => {
+    if (timer) { clearInterval(timer); timer = null; $('gal-play').textContent = '▶ 自動再生'; }
+    else { timer = setInterval(() => step(1), 4000); $('gal-play').textContent = '⏸ 停止'; }
+  };
+  renderChips(); render();
+})();
+</script>
 </body>
 </html>
