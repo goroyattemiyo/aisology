@@ -31,7 +31,8 @@ main{position:relative;z-index:1}
 .scroll-line{width:1px;height:60px;background:linear-gradient(to bottom,var(--neon),transparent);animation:scrollAnim 2s ease-in-out infinite}
 .hub{background:var(--bg2);border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:5rem 2rem}
 .hub-inner{max-width:1100px;margin:0 auto}
-.hub-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2.5rem}
+.hub-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:1.5rem;margin-top:2.5rem}
+@media(max-width:900px){.hub-grid{grid-template-columns:repeat(2,1fr)}}
 @media(max-width:600px){.hub-grid{grid-template-columns:1fr}}
 .hub-card{display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:2.5rem 1.5rem;background:var(--card);border:1px solid var(--border);border-radius:12px;text-decoration:none;transition:all .3s;gap:.75rem}
 .hub-card:hover{border-color:rgba(0,212,255,.5);transform:translateY(-4px);box-shadow:0 8px 40px rgba(0,212,255,.15)}
@@ -101,6 +102,11 @@ main{position:relative;z-index:1}
 <div class="hub-name">TRY</div>
 <div class="hub-sub">AIアプリ・ツール一覧</div>
 </a>
+<a href="./konshu/" class="hub-card">
+<div class="hub-icon">🌙</div>
+<div class="hub-name">KHONSHU</div>
+<div class="hub-sub">マスコット「コンシュ」</div>
+</a>
 </div>
 </div>
 </div>
@@ -111,7 +117,7 @@ main{position:relative;z-index:1}
 <p class="section-label">AI Tools Directory</p>
 <h2 class="section-title">AIツールカタログ</h2>
 </div>
-<span class="updated-badge">Updated: 2026.04.29</span>
+<span class="updated-badge">Updated: 2026.11.04</span>
 </div>
 <div class="divider"></div>
 
@@ -119,7 +125,7 @@ main{position:relative;z-index:1}
 <div class="cat-header">
 <span class="cat-icon">💬</span>
 <span class="cat-name">チャット・対話AI</span>
-<span class="cat-count">5 tools</span>
+<span class="cat-count">8 tools</span>
 </div>
 <div class="tools-grid">
 <a href="https://chatgpt.com" target="_blank" class="tool-card">
@@ -152,6 +158,24 @@ main{position:relative;z-index:1}
 <div class="tool-desc">Microsoft製。Word・Excel・PowerPointと直結。マルチモデル対応で2026年4月刷新。</div>
 <div class="tool-tags"><span class="tag">無料あり</span><span class="tag">Office連携</span></div>
 </a>
+<a href="https://www.meta.ai" target="_blank" class="tool-card">
+<div class="tool-name">Meta AI</div>
+<div class="tool-model">Llama 4</div>
+<div class="tool-desc">Meta製の汎用AI。InstagramやWhatsAppなどMetaのアプリからそのまま使える。</div>
+<div class="tool-tags"><span class="tag">無料あり</span><span class="tag">SNS連携</span></div>
+</a>
+<a href="https://muse.ai" target="_blank" class="tool-card">
+<div class="tool-name">Muse</div>
+<div class="tool-model">Muse Spark</div>
+<div class="tool-desc">Meta製のパーソナルAI。会話だけでなく、調査・制作・実務の代行まで生活に寄り添う個人向けエージェント。</div>
+<div class="tool-tags"><span class="tag">パーソナルAI</span><span class="tag">エージェント</span></div>
+</a>
+<a href="https://chat.deepseek.com" target="_blank" class="tool-card">
+<div class="tool-name">DeepSeek</div>
+<div class="tool-model">DeepSeek V3 / R1</div>
+<div class="tool-desc">中国発のオープンウェイトAI。推論モデルR1の性能と低価格で世界を驚かせた。</div>
+<div class="tool-tags"><span class="tag">無料あり</span><span class="tag">推論</span><span class="tag">OSS</span></div>
+</a>
 </div>
 </div>
 
@@ -159,7 +183,7 @@ main{position:relative;z-index:1}
 <div class="cat-header">
 <span class="cat-icon">🎨</span>
 <span class="cat-name">画像生成AI</span>
-<span class="cat-count">5 tools</span>
+<span class="cat-count">7 tools</span>
 </div>
 <div class="tools-grid">
 <a href="https://www.midjourney.com" target="_blank" class="tool-card">
@@ -192,6 +216,18 @@ main{position:relative;z-index:1}
 <div class="tool-desc">オープンソースの画像生成AI。ローカル実行可能でカスタマイズ性が高い。</div>
 <div class="tool-tags"><span class="tag">無料</span><span class="tag">ローカル実行</span><span class="tag">OSS</span></div>
 </a>
+<a href="https://ideogram.ai" target="_blank" class="tool-card">
+<div class="tool-name">Ideogram</div>
+<div class="tool-model">Ideogram 3.0</div>
+<div class="tool-desc">画像内の文字描画に強い画像生成AI。ロゴやポスターなど文字入りのデザインで定番。</div>
+<div class="tool-tags"><span class="tag">無料あり</span><span class="tag">文字描画</span></div>
+</a>
+<a href="https://www.recraft.ai" target="_blank" class="tool-card">
+<div class="tool-name">Recraft</div>
+<div class="tool-model">Recraft V3</div>
+<div class="tool-desc">デザイナー向け画像生成AI。ベクター生成やスタイル統一など実務向け機能が充実。</div>
+<div class="tool-tags"><span class="tag">無料あり</span><span class="tag">ベクター</span><span class="tag">デザイン</span></div>
+</a>
 </div>
 </div>
 
@@ -199,7 +235,7 @@ main{position:relative;z-index:1}
 <div class="cat-header">
 <span class="cat-icon">🎬</span>
 <span class="cat-name">動画生成AI</span>
-<span class="cat-count">5 tools</span>
+<span class="cat-count">8 tools</span>
 </div>
 <div class="tools-grid">
 <a href="https://runwayml.com" target="_blank" class="tool-card">
@@ -231,6 +267,24 @@ main{position:relative;z-index:1}
 <div class="tool-model">Pika 2.2</div>
 <div class="tool-desc">静止画から動画生成が得意。シンプルなUIで初心者にも使いやすい。</div>
 <div class="tool-tags"><span class="tag">無料あり</span><span class="tag">画像→動画</span></div>
+</a>
+<a href="https://sora.com" target="_blank" class="tool-card">
+<div class="tool-name">Sora</div>
+<div class="tool-model">Sora 2</div>
+<div class="tool-desc">OpenAI製の動画生成AI。物理法則の理解と映像の自然さで動画生成の基準を引き上げた。</div>
+<div class="tool-tags"><span class="tag">高品質</span><span class="tag">ChatGPT統合</span></div>
+</a>
+<a href="https://labs.google/flow" target="_blank" class="tool-card">
+<div class="tool-name">Veo (Flow)</div>
+<div class="tool-model">Veo 3</div>
+<div class="tool-desc">Googleの動画生成モデルVeoを映画制作ツールFlowで使う。音声付き動画生成に対応。</div>
+<div class="tool-tags"><span class="tag">Google</span><span class="tag">音声付き</span></div>
+</a>
+<a href="https://lumalabs.ai" target="_blank" class="tool-card">
+<div class="tool-name">Luma Dream Machine</div>
+<div class="tool-model">Ray2</div>
+<div class="tool-desc">Luma製の動画生成AI。キーフレーム指定やカメラワークの細かい制御が得意。</div>
+<div class="tool-tags"><span class="tag">無料あり</span><span class="tag">カメラ制御</span></div>
 </a>
 </div>
 </div>
@@ -273,7 +327,7 @@ main{position:relative;z-index:1}
 <div class="cat-header">
 <span class="cat-icon">🗣️</span>
 <span class="cat-name">音声・TTS AI</span>
-<span class="cat-count">4 tools</span>
+<span class="cat-count">5 tools</span>
 </div>
 <div class="tools-grid">
 <a href="https://elevenlabs.io" target="_blank" class="tool-card">
@@ -300,6 +354,12 @@ main{position:relative;z-index:1}
 <div class="tool-desc">高精度音声認識API。リアルタイム文字起こしと低レイテンシが強み。開発者向け。</div>
 <div class="tool-tags"><span class="tag">API</span><span class="tag">文字起こし</span><span class="tag">リアルタイム</span></div>
 </a>
+<a href="https://github.com/openai/whisper" target="_blank" class="tool-card">
+<div class="tool-name">Whisper</div>
+<div class="tool-model">Whisper large-v3</div>
+<div class="tool-desc">OpenAI製の音声認識モデル。オープンソースで、多言語の文字起こしの土台として世界中で使われる。</div>
+<div class="tool-tags"><span class="tag">無料</span><span class="tag">OSS</span><span class="tag">文字起こし</span></div>
+</a>
 </div>
 </div>
 
@@ -307,7 +367,7 @@ main{position:relative;z-index:1}
 <div class="cat-header">
 <span class="cat-icon">🤖</span>
 <span class="cat-name">AIエージェント</span>
-<span class="cat-count">5 tools</span>
+<span class="cat-count">7 tools</span>
 </div>
 <div class="tools-grid">
 <a href="https://manus.im" target="_blank" class="tool-card">
@@ -340,6 +400,18 @@ main{position:relative;z-index:1}
 <div class="tool-desc">世界初の完全自律型AIソフトウェアエンジニア。エンドツーエンドの開発が可能。</div>
 <div class="tool-tags"><span class="tag">自律型</span><span class="tag">フルスタック</span></div>
 </a>
+<a href="https://github.com/features/copilot" target="_blank" class="tool-card">
+<div class="tool-name">GitHub Copilot</div>
+<div class="tool-model">マルチモデル対応</div>
+<div class="tool-desc">GitHub製のAIコーディング支援。補完からエージェントモードまで、開発者の定番ツール。</div>
+<div class="tool-tags"><span class="tag">コーディング</span><span class="tag">エディタ統合</span></div>
+</a>
+<a href="https://windsurf.com" target="_blank" class="tool-card">
+<div class="tool-name">Windsurf</div>
+<div class="tool-model">Windsurf Editor</div>
+<div class="tool-desc">エージェント型AIエディタ。コードベースを深く理解し、自律的に編集・実行まで進める。</div>
+<div class="tool-tags"><span class="tag">エディタ</span><span class="tag">コーディング</span><span class="tag">自律型</span></div>
+</a>
 </div>
 </div>
 
@@ -347,7 +419,7 @@ main{position:relative;z-index:1}
 <div class="cat-header">
 <span class="cat-icon">🔍</span>
 <span class="cat-name">リサーチ・AI検索</span>
-<span class="cat-count">4 tools</span>
+<span class="cat-count">5 tools</span>
 </div>
 <div class="tools-grid">
 <a href="https://www.perplexity.ai" target="_blank" class="tool-card">
@@ -373,6 +445,12 @@ main{position:relative;z-index:1}
 <div class="tool-model">Gemini 3.1 Pro</div>
 <div class="tool-desc">Google製。PDFや動画をアップしてAIと対話。ポッドキャスト自動生成機能が話題。</div>
 <div class="tool-tags"><span class="tag">無料</span><span class="tag">PDF対話</span><span class="tag">ポッドキャスト</span></div>
+</a>
+<a href="https://felo.ai" target="_blank" class="tool-card">
+<div class="tool-name">Felo</div>
+<div class="tool-model">Felo AI検索</div>
+<div class="tool-desc">日本発のAI検索エンジン。多言語の情報源を横断検索し、図解やスライド化までできる。</div>
+<div class="tool-tags"><span class="tag">無料あり</span><span class="tag">日本発</span><span class="tag">多言語</span></div>
 </a>
 </div>
 </div>
@@ -419,6 +497,7 @@ main{position:relative;z-index:1}
 <a href="https://note.com/goro_yattemiyo" target="_blank" class="footer-link">Note / Read</a>
 <a href="./listen/" class="footer-link">Listen / Music</a>
 <a href="./try/" class="footer-link">Try / Apps</a>
+<a href="./konshu/" class="footer-link">Khonshu / コンシュ</a>
 <a href="https://suno.com/@jammylife_project" target="_blank" class="footer-link">Suno</a>
 <a href="https://lin.ee/zHPX2XC" target="_blank" class="footer-link">LINE公式</a>
 </div>
